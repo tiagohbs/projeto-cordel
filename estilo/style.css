@@ -111,7 +111,7 @@ footer{
     -webkit-animation: errorBg 5s linear infinite;
     -moz-animation: errorBg 5s linear infinite;
     animation: errorBg 5s linear infinite;
-    height: 20px;
+    
 }
 
 @-webkit-keyframes errorBg {
