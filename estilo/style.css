@@ -1,0 +1,142 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root{
+    --fonte1: Verdana, genava, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3:  'Sriracha', cursive;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+html,body{
+    font-family: var(--fonte1);
+    background-color: darkgray;
+    min-height: 100vh;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+header > h1{
+    padding-top: 50x;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+header > p{
+    padding-bottom: 50px;
+
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+    color: yellow;
+    
+}
+section{
+    font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 2vw;
+
+
+}
+.normal{
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.normal > p{
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 10px;
+    background-image: linear-gradient(180deg, rgba(128, 128, 128, 0.74) 5%,rgba(128, 128, 128, 0.068) );
+}
+
+.imagem{
+    box-shadow: inset 6px 6px 12px 0px rgba(0, 0, 0, 0.568);
+    padding-right: 30px;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.205);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.imagem > p{
+    
+    border-radius: 20px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.616) 10%, rgba(0, 0, 0, 0.336));
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 2px 2px 0px black;
+}
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+
+}
+#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+/*ABAIXO CONTEUDO PARA ESTUDAR*/
+.gradiente {
+    background: rgba(255, 0, 89, 1);
+    background: -webkit-linear-gradient(45deg, rgba(255, 0, 89, 1) 0%, rgba(0, 179, 255, 1) 33%, rgba(255, 0, 89, 1) 66%, rgba(0, 179, 255, 1) 100%);
+    background: -moz-linear-gradient(45deg, rgba(255, 0, 89, 1) 0%, rgba(0, 179, 255, 1) 33%, rgba(255, 0, 89, 1) 66%, rgba(0, 179, 255, 1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(255, 0, 89, 1) 0%, rgba(0, 179, 255, 1) 33%, rgba(255, 0, 89, 1) 66%, rgba(0, 179, 255, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(255, 0, 89, 1) 0%, rgba(0, 179, 255, 1) 33%, rgba(255, 0, 89, 1) 66%, rgba(0, 179, 255, 1) 100%);
+    background: linear-gradient(45deg, rgba(255, 0, 89, 1) 0%, rgba(0, 179, 255, 1) 33%, rgba(255, 0, 89, 1) 66%, rgba(0, 179, 255, 1) 100%);
+    background-size: 400% 400%;
+    -webkit-animation: errorBg 5s linear infinite;
+    -moz-animation: errorBg 5s linear infinite;
+    animation: errorBg 5s linear infinite;
+    height: 20px;
+}
+
+@-webkit-keyframes errorBg {
+    0% {
+        background-position: 100% 0%
+    }
+    100% {
+        background-position: 15% 100%
+    }
+}
+
+@-moz-keyframes errorBg {
+    0% {
+        background-position: 100% 0%
+    }
+    100% {
+        background-position: 15% 100%
+    }
+}
+
+@keyframes errorBg {
+    0% {
+        background-position: 100% 0%
+    }
+    100% {
+        background-position: 15% 100%
+    }
+}
